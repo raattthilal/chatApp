@@ -1,0 +1,32 @@
+
+<nav class="navbar navbar-light bg-dark">
+    <a class="navbar-brand" href="#">
+        <h2 class="text-light" style="margin-left: 4%;"> Hi Budyy <img src="../../assets/chat.png" width="45" height="40" alt=""> </h2>
+    </a><button style="float: right;" class="btn btn-primary" (click)="new()">Sign Up</button>
+</nav>
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4  ">  
+            <div class="card-body shadow jumbotron" style="border-radius: 5%; margin: 5%;">
+                <h2 class="text-danger shadow" style="text-align: center;">Login</h2>
+  
+                  <div class="col-md-10" style="margin-top: 2%;margin-left: 2%;">
+                       <label class="text-primary">User Name :</label>
+                       <input type="text" class="form-control" placeholder="Enter Username" [(ngModel)]="data.username">
+                 </div>
+  
+                <div class="col-md-10" style="margin-top: 2%;margin-left: 2%;">
+                  <label class="text-primary">Password :</label>
+                  <input  type="password" class="form-control" placeholder="Enter Password" [(ngModel)]="data.password">
+                </div>
+                <div align="center" style="margin-top: 2%">
+                    <button class="btn btn-round btn-primary shadow" (click)="login()"> Login</button>
+                </div>
+          <div style="margin-left: 10%;">
+             <p [(ngModel)]="failed" style="color: red"></p>
+         </div>
+        </div>
+    </div>
+    <div class="col-md-4"></div>
+</div>
